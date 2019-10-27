@@ -1,0 +1,155 @@
+body {
+  background-color: #ccc;
+  font-size: 16px;
+  font-family: Arial, Helvetica, "Sans-serif";
+  line-height: 1.6em;
+  margin: 0;
+}
+
+.container {
+  width: 80%; 
+  margin: auto;
+  overflow: hidden;
+}
+
+.main-button {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  transition: background-color 200ms ease-in, color 200ms ease-in;
+}
+
+.main-button:hover {
+  background-color: mistyrose;
+  color: #333;
+
+}
+
+
+.content-container {      
+  position: relative;
+  top: 110px;
+  z-index:0;
+}
+
+#fb-icon {
+  position: fixed;
+  width: 30px;
+  top: 460px;
+  left: 1em;
+  opacity: 0.8;
+}
+
+#fb-icon:hover {
+  opacity: 1;
+}
+
+#main-header {
+  background-color: mistyrose;
+  color: #333;
+  position:fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index:1;
+}
+
+#navbar {
+  background-color: #333;
+  color: #fff;
+  position:fixed;
+  width: 100%;
+  top: 60px;
+  left: 0px;
+  z-index:1;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+#navbar li {
+  display: inline;
+  padding: 10px;
+}
+
+#navbar li:hover {
+  background-color: #ccc;
+
+}
+
+#navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#tagline {
+  margin-bottom: 20px;
+  min-height: 300px;
+  padding: 20px;
+  font-size: 2em;
+  line-height: 1.2em;
+  position: relative;
+}
+
+#tagline:after {
+    content: "";
+    background: url('img/farm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+
+.main {
+  float: left;
+  width: 70%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+
+.sidebar {
+  float: right;
+  width: 30%;
+  box-sizing: border-box;
+  padding: 20px;    
+  background-color: coral;  
+  margin-top: 30px;
+}
+
+footer {
+  background-color: #333;
+  padding: 20px;
+  margin-top: 40px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  top: 100px;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px){
+  .main {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 10px;
+  }
+
+  .sidebar {
+    margin-top:20px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;    
+    background-color: coral;  
+  }       
+}
